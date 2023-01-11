@@ -1,0 +1,25 @@
+html, body {
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-image: url('./assets/desktop-1920x1080.jpg');
+}
+
+@keyframes FadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.stat-box{
+  opacity: 0;
+  animation-name: FadeIn;
+  animation-duration: 1s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}

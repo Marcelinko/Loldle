@@ -153,7 +153,7 @@ function App() {
         <div style={{ marginBottom: '10px', opacity: tries > 0 ? 1 : 0, background: '#1E2328', borderRadius: '5px', color: 'white', padding: '6px 12px', fontSize: '20px', transition: 'all 0.5s' }}>
           <p>Number of tries: {tries}</p>
         </div>
-        <InputField list='data' onChange={onInputChange} />
+        <InputField placeholder='name' value={typedChampion} list='data' onChange={onInputChange} />
         <EnterButton onClick={() => guessChampion(typedChampion)}>Guess</EnterButton>
         <datalist id='data'>
           {champions.map(champion =>

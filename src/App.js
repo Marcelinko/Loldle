@@ -144,6 +144,7 @@ function App() {
         setGuessed(true);
       }
     }
+    setTypedChampion('');
   }
 
   return (
